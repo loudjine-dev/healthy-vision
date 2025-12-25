@@ -1,0 +1,107 @@
+/* 🌟 متغيرات عامة */
+:root {
+  --main-bg: #d6f2fc;
+  --main-color: #333;
+  --primary: #2e858b;
+  --secondary: #0077b6;
+  --accent: #00a8cc;
+  --light: #ffffff;
+ --border: #ffffff;
+}
+
+/* إعدادات أساسية */
+body {
+  font-family: 'Cairo', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg);
+  color: var(--main-color);
+  line-height: 1.6;
+}
+
+/* الهيدر */
+header {
+  background: var(--primary);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px solid var(--secondary);
+}
+
+/* المقدمة */
+.intro {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  max-width: 80%;
+  margin: auto;
+  color: #444;
+}
+
+/* منطقة الاختيار */
+.selector {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.selector select,
+.selector button {
+  padding: 10px 15px;
+  margin: 5px;
+  border-radius: 10px;
+  border: 1px solid var(--secondary);
+  font-size: 16px;
+  font-family: inherit;
+  outline: none;
+}
+
+.selector button {
+  background-color: var(--accent);
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out;
+}
+
+.selector button:hover {
+  background-color: var(--secondary);
+}
+
+/* نصائح */
+.tips {
+  max-width: 700px;
+  margin: 20px auto;
+  padding: 30px;
+  background: var(--light);
+  border-radius: 20px;
+  box-shadow: 0px 4px 12px rgba(5, 0, 0, 0.121);
+  font-size: 18px;
+}
+
+.tips ul {
+  list-style: "✔ ";
+  padding-right: 20px;
+  margin: 0;
+}
+/* خلي الصفحة فل سكرين ويثبت الفوتر تحت */
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* ياخذ كل المساحة المتبقية */
+}
+
+/* الفوتر */
+footer {
+  text-align: center;
+  background: var(--primary);
+  color: var(--light);
+  padding: 30px;
+  margin-top: 40px;
+  border-top: 2px solid var(--border); 
+}

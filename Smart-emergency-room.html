@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>نصائح الطوارئ الذكية</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- ربط ملف CSS -->
+  <link rel="stylesheet" href="Smart-emergency-room.css">
+</head>
+<body>
+
+  <!--  العنوان الرئيسي -->
+  <header>
+    <h1>نصائح الطوارئ الذكية</h1>
+  </header>
+
+  <!-- المقدمة -->
+  <section class="intro">
+    <p>اختر الحالة الطارئة من القائمة لمعرفة التعليمات الفورية التي يمكن أن تنقذ حياتك أو حياة من حولك.</p>
+  </section>
+
+  <!--اختيار الحالة -->
+  <section class="selector">
+    <label for="condition">اختر الحالة الطارئة:</label>
+    <select id="condition">
+      <option value="">-- اختر الحالة --</option>
+      <option value="heat">حرارة مرتفعة</option>
+      <option value="bleed">نزيف</option>
+      <option value="dizzy">دوخة</option>
+      <option value="pain">ألم مفاجئ</option>
+      <option value="burn">حروق</option>
+      <option value="fracture">كسور</option>
+      <option value="faint">إغماء</option>
+      <option value="choking">اختناق</option>
+      <option value="allergy">حساسية شديدة</option>
+      <option value="asthma">نوبة ربو</option>
+      <option value="stroke">جلطة دماغية</option>
+      <option value="heart">أزمة قلبية</option>
+      <option value="poison">تسمم</option>
+      <option value="shock">صدمة</option>
+      <option value="seizure">تشنجات / صرع</option>
+      <option value="sunstroke">ضربة شمس</option>
+      <option value="frostbite">قضمة صقيع</option>
+      <option value="dehydration">جفاف</option>
+      <option value="snakebite">لدغة ثعبان</option>
+      <option value="dogbite">عضة كلب</option>
+      <option value="scorpion">لدغة عقرب</option>
+      <option value="bee">لسعة نحلة</option>
+      <option value="eye">إصابة في العين</option>
+      <option value="tooth">ألم/كسر في الأسنان</option>
+      <option value="ear">جسم غريب في الأذن</option>
+      <option value="nosebleed">نزيف الأنف</option>
+      <option value="electric">صدمة كهربائية</option>
+      <option value="drowning">غرق</option>
+      <option value="hypoglycemia">هبوط سكر الدم</option>
+      <option value="hypertension">ارتفاع ضغط الدم</option>
+    </select>
+
+    <button id="showBtn">عرض النصائح</button>
+  </section>
+
+  <!-- مكان عرض النصائح -->
+  <section id="tips" class="tips"></section>
+
+  <!-- الفوتر -->
+  <footer>
+        <p>© 2025 - جميع الحقوق محفوظة | Healthy Vision</p>
+  </footer>
+ 
+  <!-- ربط ملف js -->
+  <script src="Smart-emergency-room.js"></script>
+
+</body>
+</html>

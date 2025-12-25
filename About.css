@@ -1,0 +1,156 @@
+/*  المتغيرات */
+:root {
+  --main-bg: #d6f2fc;       
+  --main-color: #2e858b;    
+  --accent-color: #0a1d1e; 
+  --text-color: #333;       
+  --input-bg: #f7f9fc;      
+  --white: #ffffff;
+  --label-color: #000;    
+  --shadow: rgba(0,0,0,0.1);
+}
+
+/*  الأساس */
+body {
+  font-family: 'Tajawal', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: var(--main-bg);
+  color: var(--text-color);
+  line-height: 1.8;
+
+  /* باش يثبت الفوتر في الأسفل */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*  قسم من نحن */
+.about {
+  text-align: center;
+  padding: 20px;
+  max-width: 1000px;
+  margin: auto;
+  flex: 1; /* ياخذ المساحة المتبقية */
+}
+
+.about h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--main-color);
+}
+
+.about p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: auto;
+  color: var(--text-color);
+}
+
+/*  المخطط الزمني */
+.timeline {
+  list-style: none;
+  margin: 60px auto 0;
+  padding: 0;
+  position: relative;
+  max-width: 800px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  right: 50%;
+  top: 0;
+  transform: translateX(50%);
+  width: 4px;
+  height: 100%;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.timeline-item {
+  background: var(--white);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 6px 15px var(--shadow);
+  width: 45%;
+  position: relative;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.timeline-item h3 {
+  margin-top: 0;
+  color: var(--main-color);
+  font-size: 1.3rem;
+}
+
+.timeline-item p {
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+/* ترتيب العناصر يمين/يسار */
+.timeline-item:nth-child(odd) {
+  float: right;
+  clear: both;
+}
+
+.timeline-item:nth-child(even) {
+  float: left;
+  clear: both;
+}
+
+/* الدائرة في الخط */
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: -15px;
+  width: 20px;
+  height: 20px;
+  background: var(--main-color);
+  border: 3px solid var(--white);
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.timeline-item:nth-child(even)::before {
+  right: auto;
+  left: -15px;
+}
+
+/*  Hover */
+.timeline-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+
+/* الفوتر */
+/*  الفوتر (التواصل) */
+footer {
+  background: var(--main-color); 
+  color: var(--white);
+  padding: 30px 20px;
+  text-align: center;
+  margin-top: 60px;
+  border-top: 2px solid var(--white); 
+}
+
+footer h2 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: var(--white); 
+}
+
+.contact-item {
+  font-size: 16px;
+  margin: 6px 0;
+}
+
+.contact-item a {
+  color: var(--accent-color); 
+  text-decoration: none;
+  font-weight: bold;
+}

@@ -1,0 +1,141 @@
+/* لوحة الألوان العامة */
+:root {
+  --color-bg: #d6f2fc;        
+  --color-primary: #2e858b;   
+  --color-accent: #77cfd3;    
+  --color-text-dark: #4d4d4d; 
+  --color-text-light: #ffffff;
+  --color-gray: #e0e0e0;     
+  --color-card: #ffffffcc;    
+  --color-danger: #ff4d4d;    
+  --color-danger-dark: #e60000;
+}
+
+/* إعداد عام */
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background-color: var(--color-bg); 
+  color: var(--color-primary); 
+  direction: rtl;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+/* الحاوية الرئيسية */
+.container {
+  max-width: 600px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: var(--color-card);
+  padding: 20px;
+  border-radius: 50px;
+  box-shadow: 0 0 15px rgba(0, 212, 255, 0.15);
+}
+
+/* العناوين */
+h1, h2, h3 {
+  color: var(--color-primary);
+  margin-bottom: 15px;
+  font-weight: bold;
+  border-bottom: 2px solid var(--color-accent);
+  padding-bottom: 10px;
+}
+
+/* الحقول */
+input[type="text"],
+input[type="time"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  border: 1px solid var(--color-accent);
+  border-radius: 8px;
+  background-color: #f7f9fc;
+  color: var(--color-text-dark);
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="time"]:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 5px rgba(46, 133, 139, 0.4);
+}
+
+/* زر الإضافة */
+button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color: var(--color-primary);
+  color: var(--color-text-light);
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--color-accent);
+  color: var(--color-text-dark);
+  transform: scale(1.05);
+}
+
+/* قائمة الأدوية */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+/* عنصر الدواء */
+li {
+  background-color: var(--color-text-light);
+  color: var(--color-text-dark);
+  padding: 12px;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+
+/* زر الحذف */
+.delete-btn {
+  background-color: var(--color-danger);
+  color: var(--color-text-light);
+  border: none;
+  padding: 6px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.delete-btn:hover {
+  background-color: var(--color-danger-dark);
+}
+
+/* الفوتر */
+footer {
+  text-align: center;
+  background: var(--color-primary);
+  color: var(--color-text-light);
+  padding: 15px;
+  margin-top: 40px;
+  border-top: 2px solid var(--color-text-light); 
+}

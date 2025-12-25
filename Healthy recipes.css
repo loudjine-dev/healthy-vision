@@ -1,0 +1,111 @@
+:root {
+  /* 🎨 لوحة الألوان */
+  --bg: #d6f2fc;           
+  --primary: #2e858b;      
+  --accent: #e6f7fa;        
+  --card-bg: #ffffff;      
+  --card-shadow: rgba(0,0,0,0.1);
+  --text: #333333;         
+  --subtext: #555555;       
+  --footer-bg: #2e858b;     
+  --footer-text: #ffffff;   
+  --border: #ffffff;        
+}
+
+/* إعادة ضبط */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Cairo', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* الهيدر */
+.site-header {
+  text-align: center;
+  padding: 30px 15px;
+  background: var(--primary);
+  color: var(--footer-text);
+}
+
+.site-header h1 {
+  font-size: 36px;
+}
+
+.subtitle {
+  font-size: 18px;
+  margin-top: 10px;
+  color: var(--accent);
+}
+
+/* الكونتينر */
+.container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+}
+
+/* الكارد */
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  margin-bottom: 25px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px var(--card-shadow);
+  transition: transform 0.2s ease-in-out;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* الصور */
+.recipe-img {
+  width: 100%;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* العناوين */
+h2 {
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+/* الفوائد */
+.benefit {
+  font-weight: bold;
+  color: var(--subtext);
+  margin-bottom: 15px;
+}
+
+/* القوائم */
+ul {
+  margin-bottom: 15px;
+  padding-right: 20px;
+}
+
+/* التغذية */
+.nutrition {
+  margin-top: 10px;
+  font-size: 14px;
+  color: var(--primary);
+  font-weight: bold;
+}
+
+/* الفوتر */
+footer {
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  text-align: center;
+  padding: 30px;
+  margin-top: 40px;
+  border-top: 2px solid var(--border);
+}
