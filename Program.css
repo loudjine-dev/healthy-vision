@@ -1,3 +1,4 @@
+<<<<<<< HEAD
   /*  ألوان الفوتر */
 :root{
   --bg: #d6f2fc;
@@ -83,3 +84,90 @@ footer {
   margin-top: 40px;
   border-top: 2px solid var(--footer-border); 
 }
+=======
+  /*  ألوان الفوتر */
+:root{
+  --bg: #d6f2fc;
+  --primary: #2e858b;
+  --accent: #77cfd3;
+  --card-bg: #ffffffcc;
+  --text: #16333a;
+  --footer-bg: #2e858b;
+  --footer-text: #ffffff;
+  --footer-border: #ffffff;
+}
+
+*{ box-sizing: border-box; margin:0; padding:0; }
+body{
+  font-family: "Cairo", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  direction: rtl;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ===== الهيدر ===== */
+.site-header{
+  text-align: center;
+  padding: 22px 12px 6px;
+}
+.site-header h1{
+  color: var(--primary);
+  font-size: 28px;
+  margin-bottom: 6px;
+}
+.site-header .subtitle{
+  color: rgba(22,51,58,0.7);
+  font-size: 14px;
+}
+
+/* ===== المحتوى الرئيسي ===== */
+.container{
+  flex: 1;
+  width: 100%;
+  max-width: 1000px;
+  margin-inline: auto;
+  padding: 18px 14px 30px;
+  display: grid;
+  gap: 16px;
+}
+
+/* بطاقات عامة */
+.card{
+  background: var(--card-bg);
+  border: 1px solid rgba(46,133,139,0.12);
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+}
+
+/* ملخص الخطة */
+.overview p{ margin-top:8px; color: #224; line-height:1.6; }
+.meta-row{ margin-top:12px; display:flex; gap:10px; flex-wrap:wrap; }
+.meta{ background: rgba(46,133,139,0.08); color:var(--primary); padding:6px 10px; border-radius:8px; font-weight:600; font-size:13px; }
+
+/* عناوين الأيام */
+.group-title{ font-size:16px; font-weight:700; color:#0f3c3d; border-left:6px solid var(--primary); padding:8px 12px; background: rgba(46,133,139,0.05); border-radius:8px; }
+
+/* يوم التدريب */
+.day h3{ color:var(--primary); margin-bottom:10px; font-size:18px; }
+.ex-list{ list-style:none; padding:0; margin:0; }
+.ex-list li{ padding:10px 0; border-bottom: 1px dashed rgba(34,68,68,0.08); color:#224; }
+.ex-list li:last-child{ border-bottom:none; }
+.tip{ margin-top:10px; font-size:13px; color:#445; }
+
+/* توجيهات عامة */
+.notes ul{ list-style: disc; padding-inline: 20px; margin-top:8px; color:#224; line-height:1.6; }
+
+/* ===== الفوتر ===== */
+footer {
+  text-align: center;
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 30px;
+  margin-top: 40px;
+  border-top: 2px solid var(--footer-border); 
+}
+>>>>>>> 5a24deb5d144256360e1762565ad92f685a3d9de

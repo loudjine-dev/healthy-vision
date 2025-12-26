@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*  لوحة الألوان */
 :root {
   --bg: #d6f2fc;           
@@ -154,3 +155,161 @@ footer {
 }
 
 
+=======
+/*  لوحة الألوان */
+:root {
+  --bg: #d6f2fc;           
+  --primary: #2e858b;      
+  --accent: #77cfd3;      
+  --card-bg: #ffffffcc;    
+  --text: #16333a;         
+  --footer-bg: #2e858b;    
+  --footer-text: #ffffff;  
+  --border: #ffffff;       
+}
+
+/* الفوتر */
+footer {
+  width: 100%;
+  background: var(--footer-bg);
+  color: var(--footer-text);
+  padding: 16px 0;  
+  text-align: center;
+  margin: 0;        
+  border-top: 2px solid var(--border);
+  font-size: 14px;
+}
+
+/*  إعادة ضبط أساسية */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*  إعدادات عامة للصفحة */
+body {
+  font-family: "Cairo", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  direction: rtl;
+  padding: 0px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/*  الهيدر */
+header {
+  text-align: center;
+  margin-bottom: 22px;
+}
+header h1 {
+  color: var(--primary);
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/*  المحتوى الرئيسي */
+main {
+  flex: 1;
+  max-width: 1000px;
+  width: 100%;
+  margin-inline: auto;
+  display: grid;
+  gap: 22px;
+  padding: 20px; 
+}
+
+/*  عنوان مجموعة التمارين */
+.group-title {
+  font-size: 18px;
+  margin-top: 15px;
+  margin-bottom: 6px;
+  color: #0f3c3d;
+  font-weight: 700;
+  border-left: 6px solid var(--primary);
+  padding: 10px 12px;
+  background: rgba(46, 133, 139, 0.06);
+  border-radius: 8px;
+}
+
+/*  كارت التمرين */
+.exercise {
+  background: var(--card-bg);
+  border: 1px solid rgba(46, 133, 139, 0.15);
+  border-radius: 14px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 1fr 320px; /* تقسيم بين النص والفيديو */
+  gap: 18px;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.exercise:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+/*  نصوص التمرين */
+.meta h3 {
+  color: var(--primary);
+  margin-bottom: 10px;
+  font-size: 21px;
+}
+.meta p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--text);
+}
+
+/*  وسوم التمرين */
+.tags {
+  margin-top: 10px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.tag {
+  font-size: 13px;
+  background: var(--accent);
+  color: #002;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+/*  صندوق الفيديو */
+.video-box {
+  width: 100%;
+  max-width: 320px;
+  margin-inline: auto;
+}
+.video-box video,
+.video-box iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border-radius: 12px;
+  background: #000;
+  display: block;
+  transition: transform 0.3s ease;
+}
+.video-box video:hover {
+  transform: scale(1.03);
+}
+
+/*  الفوتر */
+footer {
+  text-align: center;
+  font-size: 15px;
+  background: var(--primary);
+  color: var(--footer-text);
+  padding: 35px;
+  margin-top: 40px;
+  border-top: 2px solid var(--border); 
+}
+
+
+>>>>>>> 5a24deb5d144256360e1762565ad92f685a3d9de

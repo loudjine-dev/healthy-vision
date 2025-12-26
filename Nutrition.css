@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* لوحة الألوان */
 :root {
   --main-bg: #d6f2fc;      
@@ -85,3 +86,92 @@ footer {
   border-top: 2px solid var(--footer-text); 
 }
 
+=======
+/* لوحة الألوان */
+:root {
+  --main-bg: #d6f2fc;      
+  --primary: #2e858b;       
+  --primary-light: #77cfd3; 
+  --text-dark: #222;     
+  --card-bg: #ffffff;     
+  --shadow: rgba(0,0,0,0.08);
+  --shadow-hover: rgba(0,0,0,0.15);
+  --footer-bg: #2e858b;    
+  --footer-text: #ffffff;  
+}
+
+/* إعادة ضبط افتراضية */
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Cairo', sans-serif;
+}
+
+/* إعدادات الصفحة */
+body {
+  background: var(--main-bg);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* الفوتر تحت */
+}
+
+/* القسم */
+.nutrition-tips {
+  max-width: 850px;
+  margin: 40px auto;
+  padding: 0 20px; /* بس من الجوانب */
+  text-align: center;
+  flex: 1; /* علشان المحتوى يتمدد */
+}
+
+.nutrition-tips h2 {
+  font-size: 34px;
+  color: var(--primary);
+  margin-bottom: 28px;
+  font-weight: 700;
+}
+
+/* الكارد */
+.tip-card {
+  background: var(--card-bg);
+  color: var(--text-dark);
+  padding: 20px;
+  margin-bottom: 18px;
+  border-radius: 14px;
+  box-shadow: 0 4px 10px var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: right;
+}
+
+.tip-card h3 {
+  color: var(--primary);
+  font-size: 20px;
+}
+
+.tip-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--text-dark);
+}
+
+.tip-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 15px var(--shadow-hover);
+}
+
+/* إلغاء المسافة أسفل آخر كارد */
+.tip-card:last-child {
+  margin-bottom: 0;
+}
+
+/* الفوتر */
+footer {
+  text-align: center;
+  background: var(--primary);
+  color: var(--footer-text);
+  padding: 30px;
+  margin-top: 40px;
+  border-top: 2px solid var(--footer-text); 
+}
+
+>>>>>>> 5a24deb5d144256360e1762565ad92f685a3d9de

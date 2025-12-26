@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*لوحة الألوان */
 :root {
   --main-bg: #d6f2fc;       /* خلفية الصفحة */
@@ -79,3 +80,86 @@ footer {
   margin-top: 40px;
   border-top: 2px solid var(--footer-text);
 }
+=======
+/*لوحة الألوان */
+:root {
+  --main-bg: #d6f2fc;       /* خلفية الصفحة */
+  --primary: #2e858b;       /* اللون الأساسي */
+  --primary-light: #77cfd3; /* اللون الفاتح */
+  --text-dark: #4d4d4d;     /* لون النص */
+  --card-bg: #ffffffca;     /* خلفية الكروت */
+  --footer-text: #ffffff;   /* نص الفوتر */
+}
+
+/* إعادة ضبط افتراضية */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* إعدادات أساسية للصفحة */
+body {
+  font-family: 'Cairo', sans-serif;
+  background: var(--main-bg);
+  color: var(--primary); 
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* الكارد الرئيسي */
+.main-card {
+  flex: 1; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 20px; 
+}
+
+/* العنوان */
+h2 {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: var(--text-dark);
+}
+
+/* تصميم الفئات */
+.category {
+  background-color: var(--primary); 
+  color: var(--footer-text); 
+  padding: 15px 25px;
+  border-radius: 12px; 
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  min-width: 200px;
+  text-align: center;
+}
+
+/* إزالة الخط تحت الروابط */
+a {
+  text-decoration: none;
+}
+
+/* تأثير hover */
+.category:hover {
+  background-color: var(--primary-light); 
+  color: var(--text-dark); 
+  transform: scale(1.05); 
+}
+
+/* الفوتر */
+footer {
+  text-align: center;
+  background: var(--primary);
+  color: var(--footer-text);
+  padding: 30px ;
+  margin-top: 40px;
+  border-top: 2px solid var(--footer-text);
+}
+>>>>>>> 5a24deb5d144256360e1762565ad92f685a3d9de

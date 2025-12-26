@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /*  لوحة الألوان: غير الألوان من هنا فقط */
 :root {
   --main-bg: #d6f2fc;        
@@ -78,3 +79,85 @@ footer {
   margin-top: 40px;
   border-top: 2px solid var(--footer-text); 
 }
+=======
+/*  لوحة الألوان: غير الألوان من هنا فقط */
+:root {
+  --main-bg: #d6f2fc;        
+  --primary: #2e858b;        
+  --primary-light: #77cfd3;  
+  --text-dark: #16333a;      
+  --card-bg: #ffffffcc;      
+  --footer-text: #ffffff;    
+}
+
+/* إعدادات أساسية للصفحة */
+body {
+   font-family: 'Cairo', sans-serif;
+  direction: rtl; 
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg); 
+  color: var(--text-dark); 
+}
+
+/* الهيدر العلوي */
+header {
+  background: var(--primary); 
+  color: var(--footer-text); 
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px solid var(--primary-light); 
+}
+
+/* 📝 الفقرة التقديمية */
+.intro {
+  text-align: center;
+  padding: 20px;
+  font-size: 18px;
+  max-width: 80%;
+  margin: auto;
+  color: var(--text-dark); 
+}
+
+/* 📌 حاوية النصائح */
+.tips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* 📋 بطاقة نصيحة */
+.tip {
+  background-color: var(--card-bg); 
+  padding: 20px;
+  margin: 15px;
+  width: 300px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px rgba(0,0,0,0.1); 
+  text-align: center;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s;
+}
+
+.tip:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 12px rgba(46,133,139,0.5); 
+}
+
+/* العناوين */
+h2 {
+  color: var(--primary); 
+}
+
+/* الفوتر */
+footer {
+  text-align: center;
+  background: var(--primary);
+  color: var(--footer-text);
+  padding: 15px;
+  margin-top: 40px;
+  border-top: 2px solid var(--footer-text); 
+}
+>>>>>>> 5a24deb5d144256360e1762565ad92f685a3d9de

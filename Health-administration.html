@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="ar">
 <head>
@@ -58,3 +59,65 @@
   
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ادارة الصحة</title>
+  <!-- استدعاء خط من جوجل -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+  <!-- ربط ملف CSS الخارجي -->
+  <link rel="stylesheet" href="Health-administration.css" />
+</head>
+<body>
+
+  <!-- عنوان الصفحة -->
+  <h1>تقييم صحتك اليوم</h1>
+  
+  <!-- إدخال مستوى السكر صائم -->
+  <label for="fasting">مستوى السكر في الدم عند الصيام (mg/dL):</label>
+  <input type="number" id="fasting" min="0" />
+  
+  <!-- إدخال مستوى السكر بعد الأكل -->
+  <label for="afterEating">مستوى السكر في الدم بعد الأكل بساعتين (mg/dL):</label>
+  <input type="number" id="afterEating" min="0" />
+  
+  <!-- إدخال ضغط الدم الانقباضي -->
+  <label for="systolic">ضغط الدم الانقباضي (mmHg):</label>
+  <input type="number" id="systolic" min="0" />
+  
+  <!-- إدخال ضغط الدم الانبساطي -->
+  <label for="diastolic">ضغط الدم الانبساطي (mmHg):</label>
+  <input type="number" id="diastolic" min="0" />
+  
+  <!-- إدخال معدل ضربات القلب -->
+  <label for="heartRate">معدل ضربات القلب (نبضة/دقيقة):</label>
+  <input type="number" id="heartRate" min="0" />
+  
+  <!-- إدخال مستوى الكوليسترول -->
+  <label for="cholesterol">مستوى الكوليسترول الكلي (mg/dL):</label>
+  <input type="number" id="cholesterol" min="0" />
+  
+  <!-- إدخال درجة الحرارة -->
+  <label for="temperature">درجة حرارة جسمك الآن (°C):</label>
+  <input type="number" step="0.1" id="temperature" min="20" max="45" />
+  
+  <!-- زر التقييم -->
+  <button id="evaluateBtn">اعرض التقييم</button>
+
+  <!-- مكان عرض النتيجة -->
+  <div id="result" class="result" style="display:none;"></div>
+  
+  <!-- الفوتر -->
+  <footer>
+    <p>© 2025 - جميع الحقوق محفوظة | Healthy Vision</p>
+  </footer>
+
+  <!-- ربط ملف الجافاسكربت -->
+  <script src="Health-administration.js"></script>
+  
+</body>
+</html>
+>>>>>>> 5a24deb5d144256360e1762565ad92f685a3d9de

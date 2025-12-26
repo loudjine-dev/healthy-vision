@@ -1,5 +1,13 @@
+<<<<<<< HEAD
 {
   "builds": [
     { "src": "*.html", "use": "@vercel/static" }
   ]
 }
+=======
+{
+  "builds": [
+    { "src": "*.html", "use": "@vercel/static" }
+  ]
+}
+>>>>>>> 5a24deb5d144256360e1762565ad92f685a3d9de
